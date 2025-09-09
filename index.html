@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Semear UFTM</title>
+
+    <!-- Boostrap -->
+    <link href="static/base/bootstrap/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="static/base/img/favicon.ico" type="image/x-icon">
+
+    <!-- fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700&display=swap" rel="stylesheet" />    
+
+    <link href="static/base/css/style.css" rel="stylesheet" />
+    <link href="static/base/css/modal-style.css" rel="stylesheet" />
+
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="static/home/css/style.css" />
+</head>
+<body>
+
+    <nav id="nav-bar">
+        <div class="wrapper">
+            <a class="logo" href="#">
+                <svg width="97" height="25" viewBox="0 0 97 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path id="logo-icon"
+                        d="M24.972 5.58211C25.1076 2.54073 24.972 0.0183595 24.972 0.0183595L13.6899 0H11.5338C-1.75594 2.16788 0.0868695 14.1519 0.0868695 14.1519L2.77294 12.662C2.58539 2.97571 12.1433 2.50965 12.1433 2.50965L22.5239 2.43551L22.5296 5.01931C22.5296 5.01931 22.5438 6.90261 20.4594 7.29099L15.8296 7.31147C14.8954 6.7289 13.7915 6.39065 12.6079 6.39065C9.25476 6.39065 6.53672 9.09238 6.53672 12.4254C6.53672 13.3137 6.73137 14.1562 7.07805 14.916H4.83243C4.83243 14.916 0.266604 14.7084 0.0612946 19.2948C-0.0608966 22.0326 0.0371405 24.3494 0.0577425 24.7844L0.000909221 24.8409H0.060584C0.0612944 24.8515 0.0612946 24.8593 0.0612946 24.8593L0.0797652 24.8409L11.283 24.8593H13.4391C26.7288 22.6914 24.886 10.7073 24.886 10.7073L22.1999 12.1973C22.3868 21.8829 12.8289 22.3482 12.8289 22.3482L2.50867 22.4217L2.50299 19.8569C2.50299 19.8569 2.48878 17.9736 4.57313 17.5852L9.36416 17.5641L9.29099 17.4786C10.2444 18.0979 11.3832 18.4594 12.6072 18.4594C15.9604 18.4594 18.6784 15.7577 18.6784 12.4247C18.6784 11.5462 18.488 10.713 18.1491 9.96024H20.2015C20.2008 9.96094 24.7674 10.1686 24.972 5.58211ZM12.7848 15.8629C10.8958 15.8629 9.36416 14.3405 9.36416 12.4628C9.36416 10.5852 10.8958 9.06272 12.7848 9.06272C14.6738 9.06272 16.2054 10.5852 16.2054 12.4628C16.2054 14.3405 14.6738 15.8629 12.7848 15.8629Z"
+                        fill="#008542" />
+                    <path id="logo-semear-s"
+                        d="M36.4554 7.8656C35.7924 7.39348 34.6564 6.93884 33.6713 6.93884C32.5919 6.93884 32.0812 7.42979 32.0812 8.09158C32.0812 8.50721 32.4221 8.90401 33.0474 9.26315L34.7521 10.2841C36.419 11.2862 37.082 12.4012 37.082 13.8378C37.082 15.8608 35.7371 17.6942 32.7455 17.6942C31.4761 17.6942 30.3024 17.3727 29.4884 17.0324V14.0651C30.1892 14.6139 31.4384 15.1802 32.6323 15.1802C33.6551 15.1802 34.2225 14.6892 34.2225 13.9898C34.2225 13.5553 33.9193 13.1585 33.1997 12.7415L31.4384 11.7018C29.7337 10.7185 29.2041 9.62229 29.2041 8.1669C29.2041 6.37121 30.359 4.42352 33.6929 4.42352C34.6591 4.42352 35.663 4.65084 36.4581 5.00998V7.8656H36.4554Z"
+                        fill="#15343B" />
+                    <path id="logo-semear-e1"
+                        d="M39.1631 17.4871V4.63342H46.4925V7.22272H41.8528V9.71786H46.1139V12.3072H41.8528V14.8964H46.4925V17.4857H39.1631V17.4871Z"
+                        fill="#15343B" />
+                    <path id="logo-semear-m"
+                        d="M54.6555 17.4871L51.6639 9.47171V17.4871H48.9741V4.63342H52.2689L55.8481 14.0665L59.4084 4.63342H62.6843V17.4871H59.9946V9.47171L57.003 17.4871H54.6555Z"
+                        fill="#15343B" />
+                    <path id="logo-semear-e2"
+                        d="M65.5249 17.4871V4.63342H72.8544V7.22272H68.2147V9.71786H72.4757V12.3072H68.2147V14.8964H72.8544V17.4857H65.5249V17.4871Z"
+                        fill="#15343B" />
+                    <path id="logo-semear-a"
+                        d="M82.399 14.7458H77.797L76.8308 17.4871H73.8203L78.5934 4.63342H81.6039L86.3756 17.4871H83.3652L82.399 14.7458ZM78.6877 12.1565H81.5284L80.1081 8.14948L78.6877 12.1565Z"
+                        fill="#15343B" />
+                    <path id="logo-semear-r"
+                        d="M87.7396 4.63342H92.1907C94.7093 4.63342 96.4517 5.99465 96.4517 8.3768C96.4517 10.2102 95.3911 11.2687 94.1217 11.6279C95.7321 12.4591 96.6969 14.7283 97.0001 17.4884H94.2161C93.7619 14.6906 92.6637 12.7066 91.091 12.7066H90.428V17.4884H87.7383V4.63342H87.7396ZM92.1893 7.22272H90.428V10.1147H92.1893C93.041 10.1147 93.6851 9.60487 93.6851 8.6781C93.6865 7.73385 93.0423 7.22272 92.1893 7.22272Z"
+                        fill="#15343B" />
+                </svg>
+            </a>
+
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a class="a-close-menu" href="#home">Início</a>
+                    </li>
+                    <li><a class="a-close-menu" href="#sobre">Sobre</a></li>
+                    <li><a class="a-close-menu" href="#governanca">Governança</a></li>
+                    <li><a class="a-close-menu" href="#contact">Contatos</a></li>
+                </ul>
+
+                <a class="button" class="a-close-menu" href="#donations">Doe agora</a>
+
+                <ul class="social-links">
+                    <li>
+                        <a target="_blank" href="#"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M17 1.99997H7C4.23858 1.99997 2 4.23855 2 6.99997V17C2 19.7614 4.23858 22 7 22H17C19.7614 22 22 19.7614 22 17V6.99997C22 4.23855 19.7614 1.99997 17 1.99997Z"
+                                    stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M15.9997 11.3701C16.1231 12.2023 15.981 13.0523 15.5935 13.7991C15.206 14.5459 14.5929 15.1515 13.8413 15.5297C13.0898 15.908 12.2382 16.0397 11.4075 15.906C10.5768 15.7723 9.80947 15.3801 9.21455 14.7852C8.61962 14.1903 8.22744 13.4229 8.09377 12.5923C7.96011 11.7616 8.09177 10.91 8.47003 10.1584C8.84829 9.40691 9.45389 8.7938 10.2007 8.4063C10.9475 8.0188 11.7975 7.87665 12.6297 8.00006C13.4786 8.12594 14.2646 8.52152 14.8714 9.12836C15.4782 9.73521 15.8738 10.5211 15.9997 11.3701Z"
+                                    stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M17.5 6.49997H17.51" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="#">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M18 1.99997H15C13.6739 1.99997 12.4021 2.52675 11.4645 3.46444C10.5268 4.40212 10 5.67389 10 6.99997V9.99997H7V14H10V22H14V14H17L18 9.99997H14V6.99997C14 6.73475 14.1054 6.4804 14.2929 6.29286C14.4804 6.10533 14.7348 5.99997 15 5.99997H18V1.99997Z"
+                                    stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="#">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M22.5396 6.42C22.4208 5.94541 22.1789 5.51057 21.8382 5.15941C21.4976 4.80824 21.0703 4.55318 20.5996 4.42C18.8796 4 11.9996 4 11.9996 4C11.9996 4 5.1196 4 3.3996 4.46C2.92884 4.59318 2.50157 4.84824 2.16094 5.19941C1.82031 5.55057 1.57838 5.98541 1.4596 6.46C1.14481 8.20556 0.990831 9.97631 0.999595 11.75C0.988374 13.537 1.14236 15.3213 1.4596 17.08C1.59055 17.5398 1.8379 17.9581 2.17774 18.2945C2.51758 18.6308 2.93842 18.8738 3.3996 19C5.1196 19.46 11.9996 19.46 11.9996 19.46C11.9996 19.46 18.8796 19.46 20.5996 19C21.0703 18.8668 21.4976 18.6118 21.8382 18.2606C22.1789 17.9094 22.4208 17.4746 22.5396 17C22.852 15.2676 23.0059 13.5103 22.9996 11.75C23.0108 9.96295 22.8568 8.1787 22.5396 6.42Z"
+                                    stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M9.75 15.02L15.5 11.75L9.75 8.48001V15.02Z" stroke="#FFFAF1" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+
+            <button aria-expanded="false" aria-label="Abrir menu" class="open-menu btn-open-menu">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path id="menu-line-1" d="M10 20H30" stroke="#00856F" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path id="menu-line-2" d="M10 12H30" stroke="#00856F" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path id="menu-line-3" d="M18 28L30 28" stroke="#00856F" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </button>
+
+            <button aria-expanded="true" aria-label="Fechar menu" class="close-menu a-close-menu">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M30 10L10 30M10 10L30 30" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <section id="home">
+        <div class="wrapper">
+            <div class="col-a">
+                <header>
+                    <h4>Bem vindos a SEMEAR! 👋</h4>
+                    <h1>O fundo patrimonial que apoia a UFTM!</h1>
+                </header>
+
+                <div class="content">
+                    <p>
+                        Os recursos e doações captados são aplicados em um fundo patrimonial cujos rendimentos são
+                        investidos
+                        em pesquisas, atividades de ensino, ações esportivas, culturais e sociais realizadas no âmbito da
+                        UFTM.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-b">
+                <img src="static/home/assets/mulher-negra-com-moleton-verde-com-as-duas-maos-no-peito.png"
+                    alt="Mulher negra vestindo moletom verde com as duas mãos no peito e sorrindo" />
+            </div>
+
+            <div class="stats">
+
+                <div class="stat">
+                    <h3>GANHE</h3>
+                    <p>descontos em eventos da associação</p>
+                </div>
+
+                <div class="stat">
+                    <h3>DECIDA</h3>
+                    <p>os próximos passos do fundo</p>
+                </div>
+
+                <div class="stat">
+                    <h3>ACESSE</h3>
+                    <p>editais de custeio</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="donations">
+        <div class="container">
+            <header>
+                <h2>Doe agora</h2>
+            </header>
+            <div class="pix-ted-container">
+                <div class="pix-container">
+                    <h3>PIX</h3>
+                    <p id="pix-copyble"> <i class="fa-regular fa-copy"></i> <span>CNPJ:</span> 47.156.016/0001-51 </p>
+                </div>
+                <div class="ted-container">
+                    <h3>TED</h3>
+                    <div class="ted-fields-container">
+                        <div class="banco-agencia-container">
+                            <p><span>Banco:</span> 401</p>
+                            <p><span>Agência:</span> 0001</p>
+                        </div>
+                        <div class="conta-cnpj-container">
+                            <p id="conta-sem-dv-copyble" class="copyble"> <i class="fa-regular fa-copy"></i> <span>Conta-corrente:</span> 8796519-0</p>
+                            <p id="cnpj-copyble" class="copyble"> <i class="fa-regular fa-copy"></i> <span>CNPJ:</span> 47.156.016/0001-51</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre">
+        <div class="wrapper">
+            <header>
+                <h4>Sobre o semear</h4>
+                <h2>Saiba mais...</h2>
+            </header>
+
+            <div class="content">
+                <div class="cards">
+                    <div class="card">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="12" fill="#DCE9E2" />
+                            <path d="M17.091 8.18182L10.091 15.1818L6.90918 12" stroke="#00856F" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+                        <h3>O que é o Semear?</h3>
+                        <p>
+                            Entidade sem fins lucrativos, com autonomia administrativa, financeira e patrimonial.
+                        </p>
+                    </div>
+
+                    <div class="card">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="12" fill="#DCE9E2" />
+                            <path d="M17.091 8.18182L10.091 15.1818L6.90918 12" stroke="#00856F" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+                        <h3>Como funciona?</h3>
+                        <p>
+                            Os recursos e doações captados são aplicados e os rendimentos são
+                            investidos em pesquisas, atividades de ensino, ações esportivas, culturais e sociais realizadas
+                            no âmbito da UFTM.
+                        </p>
+                    </div>
+
+
+                    <div class="card">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="12" fill="#DCE9E2" />
+                            <path d="M17.091 8.18182L10.091 15.1818L6.90918 12" stroke="#00856F" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+                        <h3>Nosso objetivo!</h3>
+                        <p>
+                            Apoiar e financiar iniciativas desenvolvidas na Universidade
+                            Federal do Triângulo Mineiro (UFTM).
+                        </p>
+                    </div>
+
+                    <div class="card">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="12" fill="#DCE9E2" />
+                            <path d="M17.091 8.18182L10.091 15.1818L6.90918 12" stroke="#00856F" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+                        <h3>Quanto doar?</h3>
+                        <p>
+                            Nenhuma doação é pequena ou grande demais. Somos muito gratos pela participação e colaboração de
+                            todos.
+                        </p>
+                    </div>
+
+                    <div class="card">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="12" fill="#DCE9E2" />
+                            <path d="M17.091 8.18182L10.091 15.1818L6.90918 12" stroke="#00856F" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+                        <h3>Nossos semeadores!</h3>
+                        <p>
+                            Buscamos incentivar e promover a captação de recursos junto à comunidade acadêmica, iniciativa
+                            privada, poder público, agências financiadoras oficiais e entidades congêneres no Brasil e no
+                            exterior.
+                        </p>
+                    </div>
+
+                    <div class="card">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="12" fill="#DCE9E2" />
+                            <path d="M17.091 8.18182L10.091 15.1818L6.90918 12" stroke="#00856F" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+                        <h3>Parceria com empresas</h3>
+                        <p>
+                            Através do termo de compromisso, parte da sua doação pode ser direcionada para pesquisas de
+                            interesse da sua empresa.
+                        </p>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="governanca">
+        <div class="wrapper">
+            <div class="col-a">
+                <header>
+                    <h4>Governança</h4>
+                    <h2>Institucional</h2>
+                </header>
+
+                <div class="content">
+                    <p>
+                        Adotamos um modelo de atuação pautado além dos moldes de gestão tradicionais, com boas práticas de
+                        outros fundos e sob a Lei dos Fundos Patrimoniais (Lei 13.800/2019), zelando pela transparência,
+                        eficiência e segurança para os doadores e projetos apoiados.
+                    </p>
+                    <p>
+                        Contamos com uma estrutura organizacional composta por Conselho de Administração, Conselho Fiscal e
+                        Assembleia Geral de Associados. Buscamos adotar sempre as melhores práticas de governança visando à
+                        maximização de rentabilidade do fundo patrimonial de forma sustentável.
+                    </p>
+                    <p>
+                        Disponibilizamos editais voltados para nossa comunidade e que contribuam direta ou indiretamente
+                        para o desenvolvimento das atividades da UFTM.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-b">
+                <img src="static/home/assets/professores-fazendo-anotacoes-em-papel-e-notebook.png"
+                    alt="Professores fazendo anotações em papel e notebook" />
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="wrapper">
+            <div class="col-a">
+                <header>
+                    <h2>Fale conosco</h2>
+                </header>
+
+                <div class="content">
+                    <ul>
+                        <li>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M21 10C21 17 12 23 12 23C12 23 3 17 3 10C3 7.61305 3.94821 5.32387 5.63604 3.63604C7.32387 1.94821 9.61305 1 12 1C14.3869 1 16.6761 1.94821 18.364 3.63604C20.0518 5.32387 21 7.61305 21 10Z"
+                                    stroke="#00856F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z"
+                                    stroke="#00856F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+
+                            <a class="email-link" target="_blank"
+                                href="http://maps.google.com/?q=Universidade Federal do Triângulo Mineiro - Reitoria">Uberaba
+                                - MG</a>
+                        </li>
+                        <li>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M4 5.00002C3.45228 5.00002 3 5.4523 3 6.00002V18C3 18.5477 3.45228 19 4 19H20C20.5477 19 21 18.5477 21 18V6.00002C21 5.4523 20.5477 5.00002 20 5.00002H4ZM1 6.00002C1 4.34773 2.34772 3.00002 4 3.00002H20C21.6523 3.00002 23 4.34773 23 6.00002V18C23 19.6523 21.6523 21 20 21H4C2.34772 21 1 19.6523 1 18V6.00002Z"
+                                    fill="#00856F" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M1.18073 5.42653C1.49745 4.97408 2.12098 4.86405 2.57343 5.18076L12 11.7793L21.4265 5.18076C21.879 4.86405 22.5025 4.97408 22.8192 5.42653C23.1359 5.87898 23.0259 6.50251 22.5734 6.81923L12.5734 13.8192C12.2291 14.0603 11.7708 14.0603 11.4265 13.8192L1.4265 6.81923C0.974052 6.50251 0.864017 5.87898 1.18073 5.42653Z"
+                                    fill="#00856F" />
+                            </svg>
+
+
+                            <a class="email-link" target="_blank"
+                                href="mailto:semearfundopatrimonial@gmail.com">semearfundopatrimonial@gmail.com</a>
+                        </li>
+                        <li>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M16.6 14C16.4 13.9 15.1 13.3 14.9 13.2C14.7 13.1 14.5 13.1 14.3 13.3C14.1 13.5 13.7 14.1 13.5 14.3C13.4 14.5 13.2 14.5 13 14.4C12.3 14.1 11.6 13.7 11 13.2C10.5 12.7 10 12.1 9.6 11.5C9.5 11.3 9.6 11.1 9.7 11C9.8 10.9 9.9 10.7 10.1 10.6C10.2 10.5 10.3 10.3 10.3 10.2C10.4 10.1 10.4 9.90001 10.3 9.80001C10.2 9.70001 9.7 8.50001 9.5 8.00001C9.4 7.30001 9.2 7.30001 9 7.30001C8.9 7.30001 8.7 7.30001 8.5 7.30001C8.3 7.30001 8 7.50001 7.9 7.60001C7.3 8.20001 7 8.90001 7 9.70001C7.1 10.6 7.4 11.5 8 12.3C9.1 13.9 10.5 15.2 12.2 16C12.7 16.2 13.1 16.4 13.6 16.5C14.1 16.7 14.6 16.7 15.2 16.6C15.9 16.5 16.5 16 16.9 15.4C17.1 15 17.1 14.6 17 14.2C17 14.2 16.8 14.1 16.6 14ZM19.1 4.90001C15.2 1.00001 8.9 1.00001 5 4.90001C1.8 8.10001 1.2 13 3.4 16.9L2 22L7.3 20.6C8.8 21.4 10.4 21.8 12 21.8C17.5 21.8 21.9 17.4 21.9 11.9C22 9.30001 20.9 6.80001 19.1 4.90001ZM16.4 18.9C15.1 19.7 13.6 20.2 12 20.2C10.5 20.2 9.1 19.8 7.8 19.1L7.5 18.9L4.4 19.7L5.2 16.7L5 16.4C2.6 12.4 3.8 7.40001 7.7 4.90001C11.6 2.40001 16.6 3.70001 19 7.50001C21.4 11.4 20.3 16.5 16.4 18.9Z"
+                                    fill="#00856F" />
+                            </svg>
+                            <a class="email-link" target="_blank" href=" https://wa.me/553488567251">Click e fale com o gestor</a>
+                        </li>
+                    </ul>
+
+                    <!--<a class="button" href="#">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M16.6 14.0001C16.4 13.9001 15.1 13.3001 14.9 13.2001C14.7 13.1001 14.5 13.1001 14.3 13.3001C14.1 13.5001 13.7 14.1001 13.5 14.3001C13.4 14.5001 13.2 14.5001 13 14.4001C12.3 14.1001 11.6 13.7001 11 13.2001C10.5 12.7001 10 12.1001 9.6 11.5001C9.5 11.3001 9.6 11.1001 9.7 11.0001C9.8 10.9001 9.9 10.7001 10.1 10.6001C10.2 10.5001 10.3 10.3001 10.3 10.2001C10.4 10.1001 10.4 9.9001 10.3 9.8001C10.2 9.7001 9.7 8.5001 9.5 8.0001C9.4 7.3001 9.2 7.3001 9 7.3001C8.9 7.3001 8.7 7.3001 8.5 7.3001C8.3 7.3001 8 7.5001 7.9 7.6001C7.3 8.2001 7 8.9001 7 9.7001C7.1 10.6001 7.4 11.5001 8 12.3001C9.1 13.9001 10.5 15.2001 12.2 16.0001C12.7 16.2001 13.1 16.4001 13.6 16.5001C14.1 16.7001 14.6 16.7001 15.2 16.6001C15.9 16.5001 16.5 16.0001 16.9 15.4001C17.1 15.0001 17.1 14.6001 17 14.2001C17 14.2001 16.8 14.1001 16.6 14.0001ZM19.1 4.9001C15.2 1.0001 8.9 1.0001 5 4.9001C1.8 8.1001 1.2 13.0001 3.4 16.9001L2 22.0001L7.3 20.6001C8.8 21.4001 10.4 21.8001 12 21.8001C17.5 21.8001 21.9 17.4001 21.9 11.9001C22 9.3001 20.9 6.8001 19.1 4.9001ZM16.4 18.9001C15.1 19.7001 13.6 20.2001 12 20.2001C10.5 20.2001 9.1 19.8001 7.8 19.1001L7.5 18.9001L4.4 19.7001L5.2 16.7001L5 16.4001C2.6 12.4001 3.8 7.4001 7.7 4.9001C11.6 2.4001 16.6 3.7001 19 7.5001C21.4 11.4001 20.3 16.5001 16.4 18.9001Z"
+                                fill="white" />
+                        </svg>
+                        Fale conosco
+                    </a>-->
+                </div>
+            </div>
+
+            <div class="col-b">
+                <img src="static/home/assets/homem-negro-com-moletom-bege-mexendo-no-celular.png"
+                    alt="Homem negro com moletom bege mexendo no celular e sorrindo" />
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="wrapper">
+            <div class="col-a">
+                <a class="logo" href="#home">
+                    <svg width="253" height="93" viewBox="0 0 310 93" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M134.35 37.9792C133.051 37.0633 130.824 36.1813 128.894 36.1813C126.778 36.1813 125.778 37.1338 125.778 38.4176C125.778 39.2238 126.446 39.9936 127.671 40.6903L131.012 42.6708C134.279 44.6147 135.578 46.7779 135.578 49.5647C135.578 53.4891 132.942 57.0457 127.08 57.0457C124.592 57.0457 122.292 56.422 120.696 55.7619V50.0056C122.07 51.0703 124.518 52.1688 126.858 52.1688C128.862 52.1688 129.974 51.2164 129.974 49.8595C129.974 49.0167 129.38 48.2469 127.969 47.4381L124.518 45.421C121.177 43.5136 120.139 41.387 120.139 38.5637C120.139 35.0802 122.402 31.3019 128.936 31.3019C130.83 31.3019 132.797 31.7429 134.355 32.4395V37.9792H134.35Z"
+                            fill="white" />
+                        <path
+                            d="M139.657 56.6439V31.709H154.021V36.732H144.928V41.5723H153.279V46.5953H144.928V51.6183H154.021V56.6412H139.657V56.6439Z"
+                            fill="white" />
+                        <path
+                            d="M170.016 56.6439L164.153 41.0948V56.6439H158.882V31.709H165.339L172.353 50.0083L179.33 31.709H185.75V56.6439H180.479V41.0948L174.616 56.6439H170.016Z"
+                            fill="white" />
+                        <path
+                            d="M191.317 56.6439V31.709H205.681V36.732H196.588V41.5723H204.939V46.5953H196.588V51.6183H205.681V56.6412H191.317V56.6439Z"
+                            fill="white" />
+                        <path
+                            d="M224.387 51.326H215.368L213.475 56.6439H207.575L216.929 31.709H222.829L232.18 56.6439H226.281L224.387 51.326ZM217.114 46.303H222.681L219.898 38.5298L217.114 46.303Z"
+                            fill="white" />
+                        <path
+                            d="M234.852 31.709H243.575C248.51 31.709 251.925 34.3496 251.925 38.9708C251.925 42.5273 249.847 44.5809 247.359 45.2776C250.515 46.8901 252.406 51.2921 253 56.6465H247.544C246.654 51.219 244.502 47.3703 241.42 47.3703H240.12V56.6465H234.849V31.709H234.852ZM243.572 36.732H240.12V42.3421H243.572C245.241 42.3421 246.503 41.3531 246.503 39.5553C246.506 37.7235 245.244 36.732 243.572 36.732Z"
+                            fill="white" />
+                        <path
+                            d="M127.932 72.9683H121.9L120.548 75.8856H120.014L124.678 65.9283H125.154L129.82 75.8856H129.287L127.932 72.9683ZM127.744 72.5561L124.921 66.4815L122.085 72.5561H127.744Z"
+                            fill="white" />
+                        <path
+                            d="M130.307 74.9462L130.537 74.5756C131.099 75.074 132.105 75.515 133.273 75.515C134.958 75.515 135.634 74.8888 135.634 73.9781C135.634 71.6454 130.579 73.2944 130.579 70.4085C130.579 69.3569 131.443 68.4463 133.315 68.4463C134.237 68.4463 135.245 68.7437 135.821 69.2004L135.576 69.5709C134.971 69.1012 134.12 68.8742 133.302 68.8742C131.746 68.8742 131.07 69.5422 131.07 70.3955C131.07 72.7987 136.109 71.1783 136.109 73.9807C136.109 75.134 135.145 75.9299 133.26 75.9299C132.037 75.9273 130.883 75.515 130.307 74.9462Z"
+                            fill="white" />
+                        <path
+                            d="M137.075 74.9462L137.305 74.5756C137.868 75.074 138.874 75.515 140.041 75.515C141.726 75.515 142.402 74.8888 142.402 73.9781C142.402 71.6454 137.347 73.2944 137.347 70.4085C137.347 69.3569 138.211 68.4463 140.083 68.4463C141.005 68.4463 142.014 68.7437 142.59 69.2004L142.344 69.5709C141.739 69.1012 140.889 68.8742 140.07 68.8742C138.515 68.8742 137.839 69.5422 137.839 70.3955C137.839 72.7987 142.877 71.1783 142.877 73.9807C142.877 75.134 141.913 75.9299 140.028 75.9299C138.802 75.9273 137.651 75.515 137.075 74.9462Z"
+                            fill="white" />
+                        <path
+                            d="M144.145 72.1881C144.145 69.9962 145.714 68.4463 147.816 68.4463C149.932 68.4463 151.487 69.9962 151.487 72.1881C151.487 74.3799 149.932 75.9299 147.816 75.9299C145.714 75.9273 144.145 74.3773 144.145 72.1881ZM151.012 72.1881C151.012 70.2259 149.644 68.8873 147.816 68.8873C145.989 68.8873 144.621 70.2233 144.621 72.1881C144.621 74.1503 145.989 75.502 147.816 75.502C149.644 75.502 151.012 74.1503 151.012 72.1881Z"
+                            fill="white" />
+                        <path
+                            d="M152.985 72.1881C152.985 69.9832 154.554 68.4463 156.701 68.4463C157.823 68.4463 158.832 68.8742 159.466 69.7118L159.107 70.0093C158.544 69.2421 157.668 68.8847 156.704 68.8847C154.847 68.8847 153.463 70.2206 153.463 72.1855C153.463 74.1634 154.844 75.4993 156.704 75.4993C157.668 75.4993 158.547 75.1445 159.107 74.3747L159.466 74.6591C158.832 75.4993 157.823 75.9247 156.701 75.9247C154.554 75.9273 152.985 74.393 152.985 72.1881Z"
+                            fill="white" />
+                        <path
+                            d="M161.494 66.1134C161.494 65.8576 161.71 65.6437 161.969 65.6437C162.228 65.6437 162.444 65.8576 162.444 66.0977C162.444 66.3534 162.228 66.5674 161.969 66.5674C161.71 66.5674 161.494 66.3534 161.494 66.1134ZM161.739 68.5009H162.215V75.8854H161.739V68.5009Z"
+                            fill="white" />
+                        <path
+                            d="M170.624 71.1052V75.8855H170.162V74.406C169.702 75.3297 168.752 75.9273 167.384 75.9273C165.699 75.9273 164.706 75.0871 164.706 73.8502C164.706 72.77 165.398 71.8306 167.426 71.8306H170.146V71.1052C170.146 69.6388 169.354 68.8716 167.843 68.8716C166.763 68.8716 165.812 69.2709 165.178 69.8684L164.92 69.5266C165.641 68.8586 166.718 68.4463 167.856 68.4463C169.644 68.4463 170.624 69.37 170.624 71.1052ZM170.149 73.7511V72.2142H167.428C165.802 72.2142 165.184 72.8978 165.184 73.8215C165.184 74.8731 166.018 75.528 167.415 75.528C168.794 75.5306 169.686 74.8888 170.149 73.7511Z"
+                            fill="white" />
+                        <path
+                            d="M179.015 74.3773L179.374 74.6618C178.74 75.502 177.732 75.9273 176.609 75.9273H176.509L176.292 76.6657C177.04 76.7075 177.502 77.1485 177.502 77.7904C177.502 78.487 176.91 78.9437 176.105 78.9437C175.687 78.9437 175.328 78.8289 175.011 78.5732L175.199 78.2757C175.429 78.474 175.761 78.5888 176.105 78.5888C176.68 78.5888 177.098 78.3044 177.098 77.7773C177.098 77.3076 176.739 76.9814 176.105 76.9814H175.846L176.147 75.9012C174.246 75.7029 172.893 74.2364 172.893 72.1881C172.893 69.9832 174.462 68.4463 176.609 68.4463C177.732 68.4463 178.74 68.8742 179.374 69.7118L179.015 70.0093C178.452 69.2421 177.576 68.8847 176.612 68.8847C174.755 68.8847 173.371 70.2206 173.371 72.1855C173.371 74.1634 174.753 75.4993 176.612 75.4993C177.576 75.502 178.455 75.1471 179.015 74.3773Z"
+                            fill="white" />
+                        <path
+                            d="M186.864 71.1049V75.8852H186.402V74.4057C185.942 75.3294 184.992 75.927 183.624 75.927C181.939 75.927 180.946 75.0867 180.946 73.8499C180.946 72.7696 181.638 71.8303 183.666 71.8303H186.386V71.1049C186.386 69.6384 185.594 68.8713 184.083 68.8713C183.003 68.8713 182.052 69.2705 181.419 69.8681L181.16 69.5262C181.881 68.8582 182.958 68.446 184.096 68.446C185.884 68.446 186.864 69.3697 186.864 71.1049ZM186.389 73.7508V72.2139H183.669C182.042 72.2139 181.424 72.8975 181.424 73.8212C181.424 74.8728 182.258 75.5277 183.655 75.5277C185.034 75.5303 185.927 74.8884 186.389 73.7508ZM182.356 67.0656H181.997C182.026 66.2698 182.443 65.7557 183.106 65.7557C183.941 65.7557 184.3 66.7369 184.934 66.7369C185.393 66.7369 185.668 66.3663 185.697 65.8262H186.056C186.027 66.5803 185.61 67.1074 184.947 67.1074C184.112 67.1074 183.75 66.1263 183.119 66.1263C182.66 66.1263 182.385 66.4811 182.356 67.0656Z"
+                            fill="white" />
+                        <path
+                            d="M189.138 72.1881C189.138 69.9962 190.707 68.4463 192.809 68.4463C194.925 68.4463 196.48 69.9962 196.48 72.1881C196.48 74.3799 194.925 75.9299 192.809 75.9299C190.707 75.9273 189.138 74.3773 189.138 72.1881ZM196.005 72.1881C196.005 70.2259 194.637 68.8873 192.809 68.8873C190.982 68.8873 189.614 70.2233 189.614 72.1881C189.614 74.1503 190.982 75.502 192.809 75.502C194.637 75.502 196.005 74.1503 196.005 72.1881Z"
+                            fill="white" />
+                        <path
+                            d="M122.244 83.4393V87.9926H127.716V88.4205H122.244V92.9582H121.756V82.9983H128.363V83.4393H122.244V83.4393Z"
+                            fill="white" />
+                        <path
+                            d="M136.701 85.5738V92.9582H136.239V91.1656C135.779 92.3033 134.741 93 133.315 93C131.414 93 130.22 91.9484 130.22 89.9131V85.5738H130.696V89.8844C130.696 91.6483 131.66 92.572 133.331 92.572C135.13 92.572 136.226 91.3769 136.226 89.5556V85.5712H136.701V85.5738Z"
+                            fill="white" />
+                        <path
+                            d="M146.433 88.6186V92.9579H145.957V88.6473C145.957 86.8834 145.007 85.9597 143.38 85.9597C141.507 85.9597 140.372 87.1547 140.372 88.9761V92.9605H139.896V85.5761H140.356V87.3818C140.831 86.2441 141.911 85.5187 143.422 85.5187C145.252 85.5161 146.433 86.5833 146.433 88.6186Z"
+                            fill="white" />
+                        <path
+                            d="M156.051 82.4009V92.9557H155.591V90.936C155.029 92.2172 153.835 93 152.367 93C150.294 93 148.709 91.4631 148.709 89.2582C148.709 87.0533 150.294 85.5164 152.367 85.5164C153.806 85.5164 155.015 86.2836 155.578 87.5517V82.4009H156.051V82.4009ZM155.575 89.2582C155.575 87.296 154.207 85.9574 152.38 85.9574C150.552 85.9574 149.184 87.2934 149.184 89.2582C149.184 91.2205 150.552 92.5721 152.38 92.5721C154.207 92.5721 155.575 91.2205 155.575 89.2582Z"
+                            fill="white" />
+                        <path
+                            d="M158.398 89.2579C158.398 87.0661 159.967 85.5161 162.069 85.5161C164.184 85.5161 165.74 87.0661 165.74 89.2579C165.74 91.4498 164.184 92.9997 162.069 92.9997C159.967 92.9997 158.398 91.4498 158.398 89.2579ZM165.267 89.2579C165.267 87.2957 163.899 85.9571 162.072 85.9571C160.244 85.9571 158.876 87.2931 158.876 89.2579C158.876 91.2201 160.244 92.5718 162.072 92.5718C163.899 92.5718 165.267 91.2201 165.267 89.2579Z"
+                            fill="white" />
+                        <path
+                            d="M179.478 86.2991C179.478 88.3892 177.98 89.613 175.474 89.613H172.466V92.9556H171.978V82.9983H175.477C177.98 82.9983 179.478 84.2221 179.478 86.2991ZM179.002 86.2991C179.002 84.4778 177.764 83.4393 175.503 83.4393H172.466V89.172H175.503C177.764 89.172 179.002 88.1335 179.002 86.2991Z"
+                            fill="white" />
+                        <path
+                            d="M186.978 88.1776V92.9579H186.516V91.4784C186.056 92.4021 185.106 92.9997 183.738 92.9997C182.053 92.9997 181.06 92.1594 181.06 90.9226C181.06 89.8424 181.752 88.903 183.78 88.903H186.5V88.1776C186.5 86.7112 185.708 85.944 184.197 85.944C183.117 85.944 182.166 86.3432 181.533 86.9408L181.274 86.599C181.995 85.931 183.072 85.5187 184.21 85.5187C185.998 85.5161 186.978 86.4398 186.978 88.1776ZM186.503 90.8235V89.2866H183.783C182.156 89.2866 181.538 89.9702 181.538 90.8939C181.538 91.9455 182.372 92.6004 183.769 92.6004C185.151 92.6004 186.043 91.9612 186.503 90.8235Z"
+                            fill="white" />
+                        <path
+                            d="M193.615 92.4881C193.256 92.8299 192.664 92.9995 192.117 92.9995C190.879 92.9995 190.216 92.2585 190.216 91.1077V85.9856H188.806V85.5733H190.216V83.9503H190.691V85.5733H193.153V85.9856H190.691V91.0347C190.691 92.0315 191.196 92.5846 192.16 92.5846C192.622 92.5846 193.052 92.4281 193.369 92.1437L193.615 92.4881Z"
+                            fill="white" />
+                        <path
+                            d="M199.102 85.5161V85.9858H198.972C197.229 85.9858 196.207 87.1391 196.207 89.0309V92.958H195.732V85.5735H196.192V87.3505C196.625 86.1841 197.633 85.5161 199.102 85.5161Z"
+                            fill="white" />
+                        <path
+                            d="M200.947 83.1839C200.947 82.9282 201.163 82.7142 201.422 82.7142C201.681 82.7142 201.897 82.9282 201.897 83.1683C201.897 83.424 201.681 83.6379 201.422 83.6379C201.163 83.6379 200.947 83.4266 200.947 83.1839ZM201.19 85.5741H201.665V92.9585H201.19V85.5741Z"
+                            fill="white" />
+                        <path
+                            d="M217.1 88.6188V92.9581H216.625V88.6475C216.625 86.8836 215.703 85.9599 214.134 85.9599C212.336 85.9599 211.211 87.1549 211.211 88.9763V92.9607H210.735V88.6501C210.735 86.8862 209.814 85.9625 208.258 85.9625C206.444 85.9625 205.335 87.1576 205.335 88.9789V92.9633H204.859V85.5789H205.319V87.3559C205.781 86.2312 206.829 85.5215 208.285 85.5215C209.711 85.5215 210.746 86.2052 211.079 87.5281C211.512 86.333 212.618 85.5215 214.161 85.5215C215.962 85.5163 217.1 86.5835 217.1 88.6188Z"
+                            fill="white" />
+                        <path
+                            d="M219.375 89.2579C219.375 87.0661 220.943 85.5161 223.046 85.5161C225.161 85.5161 226.716 87.0661 226.716 89.2579C226.716 91.4498 225.161 92.9997 223.046 92.9997C220.943 92.9997 219.375 91.4498 219.375 89.2579ZM226.244 89.2579C226.244 87.2957 224.876 85.9571 223.048 85.9571C221.221 85.9571 219.853 87.2931 219.853 89.2579C219.853 91.2201 221.221 92.5718 223.048 92.5718C224.876 92.5718 226.244 91.2201 226.244 89.2579Z"
+                            fill="white" />
+                        <path
+                            d="M235.6 88.6186V92.9579H235.125V88.6473C235.125 86.8834 234.174 85.9597 232.547 85.9597C230.675 85.9597 229.539 87.1547 229.539 88.9761V92.9605H229.064V85.5761H229.524V87.3818C229.999 86.2441 231.079 85.5187 232.59 85.5187C234.42 85.5161 235.6 86.5833 235.6 88.6186Z"
+                            fill="white" />
+                        <path
+                            d="M238.465 83.1839C238.465 82.9282 238.681 82.7142 238.94 82.7142C239.199 82.7142 239.415 82.9282 239.415 83.1683C239.415 83.424 239.199 83.6379 238.94 83.6379C238.681 83.6379 238.465 83.4266 238.465 83.1839ZM238.71 85.5741H239.186V92.9585H238.71V85.5741Z"
+                            fill="white" />
+                        <path
+                            d="M247.594 88.1776V92.9579H247.131V91.4784C246.672 92.4021 245.721 92.9997 244.353 92.9997C242.668 92.9997 241.675 92.1594 241.675 90.9226C241.675 89.8424 242.367 88.903 244.395 88.903H247.116V88.1776C247.116 86.7112 246.323 85.944 244.813 85.944C243.733 85.944 242.782 86.3432 242.148 86.9408L241.889 86.599C242.61 85.931 243.688 85.5187 244.826 85.5187C246.614 85.5161 247.594 86.4398 247.594 88.1776ZM247.118 90.8235V89.2866H244.398C242.771 89.2866 242.153 89.9702 242.153 90.8939C242.153 91.9455 242.988 92.6004 244.385 92.6004C245.766 92.6004 246.659 91.9612 247.118 90.8235Z"
+                            fill="white" />
+                        <path d="M250.705 82.4009H251.181V92.9557H250.705V82.4009Z" fill="white" />
+                        <path
+                            d="M92.8306 20.6269C93.335 9.38841 92.8306 0.0678415 92.8306 0.0678415L50.8906 0H42.8755C-6.52753 8.01068 0.322928 52.2938 0.322928 52.2938L10.3081 46.7881C9.61093 10.9958 45.1414 9.2736 45.1414 9.2736L83.7301 8.99962L83.7512 18.5472C83.7512 18.5472 83.804 25.5063 76.0556 26.9415L58.845 27.0171C55.3722 24.8644 51.2683 23.6145 46.8686 23.6145C34.4036 23.6145 24.2995 33.5979 24.2995 45.914C24.2995 49.1965 25.0231 52.3095 26.3119 55.1171H17.9641C17.9641 55.1171 0.991072 54.35 0.227856 71.2977C-0.226377 81.4141 0.138066 89.9753 0.214652 91.5827L0.00337993 91.7914H0.225214C0.227855 91.8306 0.227856 91.8593 0.227856 91.8593L0.296519 91.7914L41.9433 91.8593H49.9584C99.3615 83.8486 92.511 39.5655 92.511 39.5655L82.5258 45.0712C83.2204 80.8609 47.6899 82.5805 47.6899 82.5805L9.32571 82.8518L9.30458 73.3747C9.30458 73.3747 9.25177 66.4156 17.0001 64.9804L34.8103 64.9022L34.5383 64.5864C38.0823 66.8748 42.3157 68.2108 46.8659 68.2108C59.3309 68.2108 69.4349 58.2275 69.4349 45.9114C69.4349 42.6654 68.7272 39.5863 67.4675 36.8048H75.097C75.0944 36.8074 92.07 37.5745 92.8306 20.6269ZM47.5261 58.6163C40.504 58.6163 34.8103 52.9905 34.8103 46.0523C34.8103 39.114 40.504 33.4883 47.5261 33.4883C54.5483 33.4883 60.242 39.114 60.242 46.0523C60.242 52.9905 54.5483 58.6163 47.5261 58.6163Z"
+                            fill="white" />
+                    </svg>
+
+
+                </a>
+
+                <p>
+                    Semear Associação / Fundo Patrimonial <br/>
+                    CNPJ: 47.156.016/0001-51 <br/>
+                    Copyright &copy; 2025 <span>All rights reserved.</span><br />
+                    Design: Rocketseat <br />
+                    Imagens: Wayhomestudio, Freepik e Unsplash <br />
+                </p>
+            </div>
+
+            <!--<div class="col-b">
+                <ul class="social-links">
+                    <li>
+                        <a target="_blank" href="https://www.instagram.com/uftmsocial/">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M17 1.99997H7C4.23858 1.99997 2 4.23855 2 6.99997V17C2 19.7614 4.23858 22 7 22H17C19.7614 22 22 19.7614 22 17V6.99997C22 4.23855 19.7614 1.99997 17 1.99997Z"
+                                    stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M15.9997 11.3701C16.1231 12.2023 15.981 13.0523 15.5935 13.7991C15.206 14.5459 14.5929 15.1515 13.8413 15.5297C13.0898 15.908 12.2382 16.0397 11.4075 15.906C10.5768 15.7723 9.80947 15.3801 9.21455 14.7852C8.61962 14.1903 8.22744 13.4229 8.09377 12.5923C7.96011 11.7616 8.09177 10.91 8.47003 10.1584C8.84829 9.40691 9.45389 8.7938 10.2007 8.4063C10.9475 8.0188 11.7975 7.87665 12.6297 8.00006C13.4786 8.12594 14.2646 8.52152 14.8714 9.12836C15.4782 9.73521 15.8738 10.5211 15.9997 11.3701Z"
+                                    stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M17.5 6.49997H17.51" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.facebook.com/uftmsocial">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M18 1.99997H15C13.6739 1.99997 12.4021 2.52675 11.4645 3.46444C10.5268 4.40212 10 5.67389 10 6.99997V9.99997H7V14H10V22H14V14H17L18 9.99997H14V6.99997C14 6.73475 14.1054 6.4804 14.2929 6.29286C14.4804 6.10533 14.7348 5.99997 15 5.99997H18V1.99997Z"
+                                    stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.youtube.com/uftmsocial">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M22.5396 6.42C22.4208 5.94541 22.1789 5.51057 21.8382 5.15941C21.4976 4.80824 21.0703 4.55318 20.5996 4.42C18.8796 4 11.9996 4 11.9996 4C11.9996 4 5.1196 4 3.3996 4.46C2.92884 4.59318 2.50157 4.84824 2.16094 5.19941C1.82031 5.55057 1.57838 5.98541 1.4596 6.46C1.14481 8.20556 0.990831 9.97631 0.999595 11.75C0.988374 13.537 1.14236 15.3213 1.4596 17.08C1.59055 17.5398 1.8379 17.9581 2.17774 18.2945C2.51758 18.6308 2.93842 18.8738 3.3996 19C5.1196 19.46 11.9996 19.46 11.9996 19.46C11.9996 19.46 18.8796 19.46 20.5996 19C21.0703 18.8668 21.4976 18.6118 21.8382 18.2606C22.1789 17.9094 22.4208 17.4746 22.5396 17C22.852 15.2676 23.0059 13.5103 22.9996 11.75C23.0108 9.96295 22.8568 8.1787 22.5396 6.42Z"
+                                    stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M9.75 15.02L15.5 11.75L9.75 8.48001V15.02Z" stroke="#FFFAF1" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>-->
+        </div>
+    </footer>
+
+    <a id="backToTopButton" href="#home">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="20" cy="20" r="20" fill="#00856F" />
+            <path d="M20 27V13" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M13 20L20 13L27 20" stroke="white" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+        </svg>
+    </a>
+        
+    <!-- Jquery -->
+    <script src="static/base/js/jquery-3.6.1.min.js"></script>
+
+    <!-- Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
+    <!-- Boostrap -->
+    <script src="static/base/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Iugu JS -->
+    <script type="text/javascript" src="https://js.iugu.com/v2"></script>
+
+    <!-- Main custom JS -->
+    <script src="static/base/js/base.js"></script>
+    <script src="static/base/js/modal.js"></script>
+
+    <!-- ScrollReaveal Lib -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- Custom js-->
+    <script src="static/home/js/main.js"></script>
+</body>
+</html>
